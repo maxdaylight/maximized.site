@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Services | Maximized.site</title>
-  <meta name="description" content="Infrastructure and DevOps services from Max Daylight: virtualization, Windows and cloud administration, PowerShell automation, security hardening, and PKI." />
+  <title>Services | Maximized</title>
+  <meta name="description" content="Maximized services: IT and infrastructure consulting plus agent-first software development — virtualization, cloud, automation, security, LLM and AI builds." />
   <meta name="author" content="Max Daylight" />
   <link rel="canonical" href="https://maximized.site/services.html" />
 
-  <meta property="og:site_name" content="Maximized.site" />
-  <meta property="og:title" content="Services | Maximized.site" />
-  <meta property="og:description" content="Infrastructure and DevOps services: virtualization, Windows and cloud administration, PowerShell automation, security hardening, and PKI." />
+  <meta property="og:site_name" content="Maximized" />
+  <meta property="og:title" content="Services | Maximized" />
+  <meta property="og:description" content="IT and infrastructure consulting plus agent-first software development — virtualization, cloud, automation, security, and LLM/AI builds." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maximized.site/services.html" />
   <meta property="og:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Services | Maximized.site" />
-  <meta name="twitter:description" content="Infrastructure and DevOps services: virtualization, Windows and cloud administration, PowerShell automation, security hardening, and PKI." />
+  <meta name="twitter:title" content="Services | Maximized" />
+  <meta name="twitter:description" content="IT and infrastructure consulting plus agent-first software development — virtualization, cloud, automation, security, and LLM/AI builds." />
   <meta name="twitter:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="theme-color" content="#0a0f1a" />
@@ -50,16 +50,15 @@
     <div class="container site-header__inner">
       <a class="brand" href="./index.html">
         <span class="brand__mark" aria-hidden="true">&#9632;</span>
-        Maximized<span class="brand__mark" aria-hidden="true">.</span>site
+        Maximized
       </a>
 
       <nav id="primary-nav" class="primary-nav" aria-label="Primary">
         <ul class="primary-nav__list">
           <li><a class="primary-nav__link" href="./index.html">Home</a></li>
-          <li><a class="primary-nav__link" href="./about.html">About</a></li>
           <li><a class="primary-nav__link" href="./services.html">Services</a></li>
-          <li><a class="primary-nav__link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="primary-nav__link" href="./skills.html">Skills</a></li>
+          <li><a class="primary-nav__link" href="./about.html">About</a></li>
+          <li><a class="primary-nav__link" href="./work.html">Work</a></li>
           <li><a class="primary-nav__link" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -89,23 +88,37 @@
       <div class="container container--default">
         <div class="section-header">
           <p class="section-eyebrow">Services</p>
-          <h1 id="services-title">What I do</h1>
+          <h1 id="services-title">What we do</h1>
           <p class="section-lead">
-            Practical infrastructure and DevOps services for organizations that
-            need their systems to be reliable, automated, and secure.
+            Maximized works across two complementary practices: dependable IT and
+            infrastructure consulting, and agent-first software development.
           </p>
+        </div>
+        <div class="cluster">
+          <a class="btn btn--secondary" href="#it-consulting">IT &amp; Infrastructure Consulting</a>
+          <a class="btn btn--secondary" href="#agent-first">Agent-First Software Development</a>
         </div>
       </div>
     </section>
 
-    <section class="section--tight" aria-label="Service offerings">
+    <!-- ===================== Pillar 1: IT consulting ===================== -->
+    <section class="section--tight" id="it-consulting" aria-labelledby="it-title">
       <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Practice 01</p>
+          <h2 id="it-title">IT &amp; Infrastructure Consulting</h2>
+          <p class="section-lead">
+            Design, automation, and hardening for the systems your organization
+            depends on — on-premises and in the cloud.
+          </p>
+        </div>
+
         <ul class="grid grid--2">
           <li class="card" data-reveal>
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
             </span>
-            <h2 class="card__title">Virtualization &amp; server infrastructure</h2>
+            <h3 class="card__title">Virtualization &amp; server infrastructure</h3>
             <p class="card__text">
               Design and management of Proxmox clusters and Windows Server estates,
               including high availability, storage, backups, and disaster recovery.
@@ -116,7 +129,7 @@
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.34 9.5 4 4 0 0 0 7 17.5"></path></svg>
             </span>
-            <h2 class="card__title">Cloud &amp; Microsoft 365 administration</h2>
+            <h3 class="card__title">Cloud &amp; Microsoft 365 administration</h3>
             <p class="card__text">
               Azure and Microsoft 365 tenant administration — Entra ID, Intune,
               Exchange Online, conditional access, and secure baseline configuration.
@@ -127,7 +140,7 @@
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
             </span>
-            <h2 class="card__title">Automation &amp; scripting</h2>
+            <h3 class="card__title">Automation &amp; scripting</h3>
             <p class="card__text">
               PowerShell modules, scheduled jobs, and operational tooling that
               standardize tasks, reduce errors, and free up your team's time.
@@ -138,7 +151,7 @@
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </span>
-            <h2 class="card__title">Security hardening &amp; identity</h2>
+            <h3 class="card__title">Security hardening &amp; identity</h3>
             <p class="card__text">
               Identity and access management, network segmentation, and
               defense-in-depth reviews to reduce risk across hybrid environments.
@@ -149,7 +162,7 @@
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"></circle><path d="M10.85 12.15 19 4M18 5l2 2M15 8l2 2"></path></svg>
             </span>
-            <h2 class="card__title">PKI &amp; certificate management</h2>
+            <h3 class="card__title">PKI &amp; certificate management</h3>
             <p class="card__text">
               Certificate authority design, certificate lifecycle automation, and
               trust-chain hardening to keep encrypted services dependable.
@@ -160,10 +173,93 @@
             <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M9 13h6M9 17h6"></path></svg>
             </span>
-            <h2 class="card__title">Documentation &amp; process</h2>
+            <h3 class="card__title">Documentation &amp; process</h3>
             <p class="card__text">
               Clear runbooks, architecture documentation, and repeatable processes
               so environments stay maintainable as teams and needs change.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= Pillar 2: Agent-first development ================ -->
+    <section class="section--tight" id="agent-first" aria-labelledby="agent-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Practice 02</p>
+          <h2 id="agent-title">Agent-First Software Development</h2>
+          <p class="section-lead">
+            We build software with AI agents as first-class collaborators — from
+            agentic workflows to LLM-powered product features — shipped with an
+            AI-assisted delivery process.
+          </p>
+        </div>
+
+        <ul class="grid grid--2">
+          <li class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"></path><path d="M15 6l6 6-6 6"></path></svg>
+            </span>
+            <h3 class="card__title">Agentic application development</h3>
+            <p class="card__text">
+              Custom applications and services designed around autonomous and
+              human-in-the-loop agents that take real work off your team's plate.
+            </p>
+          </li>
+
+          <li class="card" data-reveal data-reveal-delay="1">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19"></path></svg>
+            </span>
+            <h3 class="card__title">LLM &amp; AI integration</h3>
+            <p class="card__text">
+              Adding large language model features to existing products — retrieval,
+              summarization, classification, and natural-language interfaces.
+            </p>
+          </li>
+
+          <li class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m7 14 3-3 3 3 5-5"></path></svg>
+            </span>
+            <h3 class="card__title">AI-assisted delivery</h3>
+            <p class="card__text">
+              An agent-first engineering workflow that ships well-tested,
+              documented code faster, without cutting corners on quality.
+            </p>
+          </li>
+
+          <li class="card" data-reveal data-reveal-delay="1">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
+            </span>
+            <h3 class="card__title">Custom tooling &amp; automation pipelines</h3>
+            <p class="card__text">
+              Internal tools, integrations, and automation pipelines — including
+              agent tooling and MCP servers — tailored to how your team works.
+            </p>
+          </li>
+
+          <li class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 9l10 6 10-6-10-6z"></path><path d="M2 15l10 6 10-6"></path></svg>
+            </span>
+            <h3 class="card__title">Technical discovery &amp; architecture</h3>
+            <p class="card__text">
+              Pragmatic discovery, scoping, and architecture so an AI-driven build
+              solves the right problem and fits your existing systems.
+            </p>
+          </li>
+
+          <li class="card" data-reveal data-reveal-delay="1">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </span>
+            <h3 class="card__title">Secure &amp; responsible AI</h3>
+            <p class="card__text">
+              Guardrails, data handling, and access controls so AI features are
+              deployed safely and stay aligned with your security posture.
             </p>
           </li>
         </ul>
@@ -185,10 +281,10 @@
       <div class="footer-col">
         <a class="brand" href="./index.html">
           <span class="brand__mark" aria-hidden="true">&#9632;</span>
-          Maximized<span class="brand__mark" aria-hidden="true">.</span>site
+          Maximized
         </a>
         <p class="text-muted mt-4">
-          Infrastructure engineering, DevOps, and systems administration —
+          IT consulting and agent-first software development —
           based in Scottsdale, Arizona.
         </p>
       </div>
@@ -196,10 +292,9 @@
       <nav class="footer-col" aria-label="Footer">
         <h2 class="footer-col__title">Site</h2>
         <div class="footer-links">
-          <a href="./about.html">About</a>
           <a href="./services.html">Services</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./skills.html">Skills</a>
+          <a href="./about.html">About</a>
+          <a href="./work.html">Work</a>
           <a href="./contact.html">Contact</a>
         </div>
       </nav>
@@ -216,7 +311,7 @@
     </div>
 
     <div class="container site-footer__bottom">
-      <p>&copy; <span data-current-year>2026</span> Maximized.site. All rights reserved.</p>
+      <p>&copy; <span data-current-year>2026</span> Maximized. All rights reserved.</p>
       <p>Built as a static site, hosted on GitHub Pages.</p>
     </div>
   </footer>

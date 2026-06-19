@@ -7,7 +7,7 @@ alwaysApply: true
 # SEO Rules
 
 ## Title & description
-- Unique `<title>` per page in the format: `Page Name | Maximized.site`.
+- Unique `<title>` per page in the format: `Page Name | Maximized`.
 - Unique `<meta name="description">` per page, **150–160 characters**.
 
 ## Open Graph
@@ -29,7 +29,8 @@ Every page includes:
 - `<link rel="canonical" href="https://maximized.site/page.html">` on every page.
 
 ## Structured data (JSON-LD)
-- `Person` schema on `index.html`.
+- `Organization` / `ProfessionalService` schema on `index.html` (the business
+  "Maximized", with `founder` Person "Max Daylight").
 - `BreadcrumbList` schema on every interior page.
 - Use `<script type="application/ld+json">`.
 

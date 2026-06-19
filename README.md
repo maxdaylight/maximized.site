@@ -1,7 +1,15 @@
 # maximized.site
 
-Personal portfolio and business website for **Max Daylight** — IT Systems
-Administrator / Infrastructure Engineer / DevOps Engineer based in Scottsdale, AZ.
+Business website for **Maximized** — an IT consulting and agent-first software
+development company based in Scottsdale, AZ, owned and primarily engineered by
+**Max Daylight**.
+
+Two practices:
+
+- **IT & Infrastructure Consulting** — virtualization, Windows and cloud
+  administration, automation, security, identity, and PKI.
+- **Agent-First Software Development** — custom software built with AI agents as
+  first-class collaborators, plus LLM/AI integration and AI-assisted delivery.
 
 Live site: [https://maximized.site](https://maximized.site)
 
@@ -26,10 +34,10 @@ Live site: [https://maximized.site](https://maximized.site)
 │   └── fonts/              # local font files (if any)
 ├── components/             # reference HTML templates (head/header/footer)
 ├── index.html              # homepage
-├── about.html              # about / bio
-├── services.html           # services
-├── portfolio.html          # projects + public repositories
-├── skills.html             # skills & certifications
+├── services.html           # services (two pillars)
+├── about.html              # about the company + owner + capabilities
+├── work.html               # selected work + public repositories
+├── portfolio.html          # redirect stub -> work.html (legacy URL)
 ├── contact.html            # contact form (Formspree) + email fallback
 ├── 404.html                # custom not-found page
 ├── CNAME                    # custom domain (do not modify)
@@ -60,15 +68,17 @@ Pushes to `main` are deployed to GitHub Pages by
 
 ## Configuration notes
 
-- **Contact form:** `contact.html` posts to Formspree. Replace the
-  `{{FORMSPREE_ID}}` placeholder in the form `action` with your real form ID.
-  A `mailto:` fallback is provided.
+- **Contact form:** `contact.html` posts to the
+  [Formspree](https://formspree.io/) endpoint in the form `action`. It works as
+  a plain POST without JavaScript, and `assets/js/contact.js` progressively
+  enhances it with an Ajax submit plus inline success/error states. A `mailto:`
+  fallback is also provided.
 - **No storage APIs:** the site never uses `localStorage`/`sessionStorage`;
   the theme preference is held in memory only.
 
 ## License & usage
 
-**All Rights Reserved. Copyright (c) 2026 Maximized.site.**
+**All Rights Reserved. Copyright (c) 2026 Maximized.**
 
 This repository is published **for demonstration and portfolio review purposes
 only**. No permission is granted to use, copy, modify, distribute, or create

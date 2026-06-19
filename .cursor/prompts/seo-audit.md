@@ -3,7 +3,7 @@
 Audit the SEO of: [filename.html or "all pages"]
 
 Check for:
-1. Unique <title> in "Page | Maximized.site" format
+1. Unique <title> in "Page | Maximized" format
 2. Meta description exists, unique, 150-160 chars
 3. All Open Graph tags present and populated
 4. canonical <link> present and correct URL

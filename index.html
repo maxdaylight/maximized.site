@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Home | Maximized.site</title>
-  <meta name="description" content="Max Daylight — Infrastructure Engineer and DevOps Architect in Scottsdale, AZ. Windows Server, Proxmox, Azure, PowerShell automation, network security, and PKI." />
+  <title>Home | Maximized</title>
+  <meta name="description" content="Maximized is an IT consulting and agent-first software development company in Scottsdale, AZ, owned and primarily engineered by Max Daylight. Let's build." />
   <meta name="author" content="Max Daylight" />
   <link rel="canonical" href="https://maximized.site/index.html" />
 
-  <meta property="og:site_name" content="Maximized.site" />
-  <meta property="og:title" content="Home | Maximized.site" />
-  <meta property="og:description" content="Infrastructure Engineer and DevOps Architect in Scottsdale, AZ. Windows Server, Proxmox, Azure, PowerShell automation, network security, and PKI." />
+  <meta property="og:site_name" content="Maximized" />
+  <meta property="og:title" content="Home | Maximized" />
+  <meta property="og:description" content="IT consulting and agent-first software development in Scottsdale, AZ, owned and primarily engineered by Max Daylight." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maximized.site/index.html" />
   <meta property="og:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Home | Maximized.site" />
-  <meta name="twitter:description" content="Infrastructure Engineer and DevOps Architect in Scottsdale, AZ. Windows Server, Proxmox, Azure, PowerShell automation, network security, and PKI." />
+  <meta name="twitter:title" content="Home | Maximized" />
+  <meta name="twitter:description" content="IT consulting and agent-first software development in Scottsdale, AZ, owned and primarily engineered by Max Daylight." />
   <meta name="twitter:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="theme-color" content="#0a0f1a" />
@@ -35,18 +35,30 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Max Daylight",
+    "@type": "ProfessionalService",
+    "name": "Maximized",
     "url": "https://maximized.site/",
     "image": "https://maximized.site/assets/images/headshot.png",
-    "jobTitle": "Infrastructure Engineer & DevOps Architect",
+    "description": "IT and infrastructure consulting and agent-first software development, owned and primarily engineered by Max Daylight.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Scottsdale",
       "addressRegion": "AZ",
       "addressCountry": "US"
     },
+    "areaServed": [
+      { "@type": "City", "name": "Scottsdale" },
+      { "@type": "AdministrativeArea", "name": "Arizona" },
+      "Remote"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Max Daylight",
+      "jobTitle": "Owner & Primary Engineer"
+    },
     "knowsAbout": [
+      "IT Consulting",
+      "Infrastructure Engineering",
       "Windows Server",
       "Active Directory",
       "Proxmox",
@@ -56,7 +68,9 @@
       "PowerShell Automation",
       "Network Security",
       "PKI",
-      "Certificate Management"
+      "Agent-First Software Development",
+      "AI Agents",
+      "Large Language Models"
     ],
     "sameAs": [
       "https://github.com/maxdaylight",
@@ -73,16 +87,15 @@
     <div class="container site-header__inner">
       <a class="brand" href="./index.html">
         <span class="brand__mark" aria-hidden="true">&#9632;</span>
-        Maximized<span class="brand__mark" aria-hidden="true">.</span>site
+        Maximized
       </a>
 
       <nav id="primary-nav" class="primary-nav" aria-label="Primary">
         <ul class="primary-nav__list">
           <li><a class="primary-nav__link" href="./index.html">Home</a></li>
-          <li><a class="primary-nav__link" href="./about.html">About</a></li>
           <li><a class="primary-nav__link" href="./services.html">Services</a></li>
-          <li><a class="primary-nav__link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="primary-nav__link" href="./skills.html">Skills</a></li>
+          <li><a class="primary-nav__link" href="./about.html">About</a></li>
+          <li><a class="primary-nav__link" href="./work.html">Work</a></li>
           <li><a class="primary-nav__link" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -113,26 +126,27 @@
       <div class="container split">
         <div>
           <p class="hero__eyebrow">
-            <span class="badge badge--accent">Scottsdale, Arizona</span>
+            <span class="badge badge--accent">Maximized &middot; Scottsdale, Arizona</span>
           </p>
           <h1 id="hero-title" class="hero__title">
-            Infrastructure Engineer. <span class="accent">DevOps Architect.</span> Systems Problem Solver.
+            IT consulting and <span class="accent">agent-first software development.</span>
           </h1>
           <p class="hero__subtitle">
-            I design, automate, and harden the infrastructure that keeps
-            organizations running — from Windows Server and Active Directory to
-            virtualization, cloud, and end-to-end automation.
+            Maximized helps organizations run dependable infrastructure and ship
+            modern software where AI agents are first-class. Owned and primarily
+            engineered by Max Daylight, working on-site in the Scottsdale area and
+            remotely.
           </p>
           <div class="hero__actions cluster">
-            <a class="btn btn--primary btn--lg" href="./portfolio.html">View My Work</a>
-            <a class="btn btn--secondary btn--lg" href="./contact.html">Get In Touch</a>
+            <a class="btn btn--primary btn--lg" href="./services.html">Explore services</a>
+            <a class="btn btn--secondary btn--lg" href="./contact.html">Start a project</a>
           </div>
         </div>
         <div class="split__media">
           <img
             class="portrait mx-auto"
             src="./assets/images/headshot.png"
-            alt="Portrait of Max Daylight, Infrastructure and DevOps Engineer"
+            alt="Max Daylight, owner and primary engineer of Maximized"
             width="360"
             height="360"
             loading="eager"
@@ -142,33 +156,52 @@
       </div>
     </section>
 
-    <!-- ============================ About ============================= -->
-    <section class="section" aria-labelledby="about-title" data-reveal>
-      <div class="container container--default">
+    <!-- ========================== What we do ========================== -->
+    <section class="section" aria-labelledby="pillars-title">
+      <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">About</p>
-          <h2 id="about-title">Reliable systems, built deliberately</h2>
+          <p class="section-eyebrow">What we do</p>
+          <h2 id="pillars-title">Two practices, one standard of quality</h2>
+          <p class="section-lead">
+            We pair deep infrastructure experience with a modern, agent-first
+            approach to building software.
+          </p>
         </div>
-        <p class="text-muted">
-          I'm an IT systems administrator and infrastructure engineer focused on
-          building resilient, automated, and secure environments. My work spans
-          on-premises virtualization, Microsoft cloud platforms, identity and
-          access management, and the PowerShell automation that ties it all
-          together. I care about clean documentation, repeatable processes, and
-          infrastructure that other engineers can trust and extend.
-        </p>
-        <p class="mt-4">
-          <a class="btn btn--ghost" href="./about.html">Read more about me &rarr;</a>
-        </p>
+
+        <ul class="grid grid--2">
+          <li class="card card--interactive" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+            </span>
+            <h3 class="card__title">IT &amp; Infrastructure Consulting</h3>
+            <p class="card__text">
+              Virtualization, Windows and cloud administration, automation,
+              security, and the documentation that keeps it all maintainable.
+            </p>
+            <p class="mt-4"><a class="btn btn--ghost" href="./services.html#it-consulting">Infrastructure services &rarr;</a></p>
+          </li>
+
+          <li class="card card--interactive" data-reveal data-reveal-delay="1">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"></path><path d="M15 6l6 6-6 6"></path></svg>
+            </span>
+            <h3 class="card__title">Agent-First Software Development</h3>
+            <p class="card__text">
+              Custom software built with AI agents as first-class collaborators —
+              agentic workflows, LLM-powered features, and AI-assisted delivery.
+            </p>
+            <p class="mt-4"><a class="btn btn--ghost" href="./services.html#agent-first">Software services &rarr;</a></p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- ============================ Skills ============================ -->
-    <section class="section" aria-labelledby="skills-title">
+    <!-- ========================== Capabilities ======================== -->
+    <section class="section" aria-labelledby="caps-title">
       <div class="container">
         <div class="section-header">
-          <p class="section-eyebrow">Core strengths</p>
-          <h2 id="skills-title">What I work with every day</h2>
+          <p class="section-eyebrow">Core capabilities</p>
+          <h2 id="caps-title">What we work with every day</h2>
         </div>
 
         <ul class="grid grid--3">
@@ -198,31 +231,31 @@
 
           <li class="card card--interactive" data-reveal>
             <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"></path><path d="M15 6l6 6-6 6"></path></svg>
             </span>
-            <h3 class="card__title">PowerShell Automation</h3>
-            <p class="card__text">Reusable modules and scripts that eliminate toil and standardize operations.</p>
+            <h3 class="card__title">Agent-First Development</h3>
+            <p class="card__text">Agentic workflows, LLM integration, and AI-assisted delivery for custom software.</p>
           </li>
 
           <li class="card card--interactive" data-reveal data-reveal-delay="1">
             <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"></path><path d="M12 19h8"></path></svg>
             </span>
-            <h3 class="card__title">Network Security</h3>
-            <p class="card__text">Segmentation, firewalls, VPNs, and defense-in-depth for hybrid networks.</p>
+            <h3 class="card__title">PowerShell &amp; Python Automation</h3>
+            <p class="card__text">Reusable modules, pipelines, and tooling that eliminate toil and standardize operations.</p>
           </li>
 
           <li class="card card--interactive" data-reveal data-reveal-delay="2">
             <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"></circle><path d="M10.85 12.15 19 4M18 5l2 2M15 8l2 2"></path></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </span>
-            <h3 class="card__title">PKI &amp; Certificate Management</h3>
-            <p class="card__text">Certificate authorities, lifecycle automation, and trust-chain hardening.</p>
+            <h3 class="card__title">Security, Identity &amp; PKI</h3>
+            <p class="card__text">Segmentation, defense-in-depth, certificate authorities, and trust-chain hardening.</p>
           </li>
         </ul>
 
         <p class="mt-8">
-          <a class="btn btn--ghost" href="./skills.html">See all skills &amp; certifications &rarr;</a>
+          <a class="btn btn--ghost" href="./about.html">See our full approach &amp; capabilities &rarr;</a>
         </p>
       </div>
     </section>
@@ -232,7 +265,7 @@
       <div class="container">
         <div class="section-header">
           <p class="section-eyebrow">Recent work</p>
-          <h2 id="work-title">Selected projects</h2>
+          <h2 id="work-title">Selected projects &amp; public code</h2>
         </div>
 
         <ul class="grid grid--3">
@@ -243,7 +276,7 @@
               <span class="badge">Python</span>
               <span class="badge">Automation</span>
             </div>
-            <p class="mt-4"><a class="btn btn--ghost" href="./portfolio.html">View in portfolio &rarr;</a></p>
+            <p class="mt-4"><a class="btn btn--ghost" href="./work.html">View in our work &rarr;</a></p>
           </li>
 
           <li class="card card--interactive" data-reveal data-reveal-delay="1">
@@ -253,7 +286,7 @@
               <span class="badge">PowerShell</span>
               <span class="badge">Ops</span>
             </div>
-            <p class="mt-4"><a class="btn btn--ghost" href="./portfolio.html">View in portfolio &rarr;</a></p>
+            <p class="mt-4"><a class="btn btn--ghost" href="./work.html">View in our work &rarr;</a></p>
           </li>
 
           <li class="card card--interactive" data-reveal data-reveal-delay="2">
@@ -263,7 +296,7 @@
               <span class="badge">Reporting</span>
               <span class="badge">Data</span>
             </div>
-            <p class="mt-4"><a class="btn btn--ghost" href="./portfolio.html">View in portfolio &rarr;</a></p>
+            <p class="mt-4"><a class="btn btn--ghost" href="./work.html">View in our work &rarr;</a></p>
           </li>
         </ul>
       </div>
@@ -273,7 +306,7 @@
     <section class="section section--tight" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-banner" data-reveal>
-          <h2 id="cta-title" class="cta-banner__title">Available for consulting and infrastructure projects</h2>
+          <h2 id="cta-title" class="cta-banner__title">Maximized is taking on new consulting and development projects</h2>
           <a class="btn btn--primary btn--lg" href="./contact.html">Start a conversation</a>
         </div>
       </div>
@@ -285,10 +318,10 @@
       <div class="footer-col">
         <a class="brand" href="./index.html">
           <span class="brand__mark" aria-hidden="true">&#9632;</span>
-          Maximized<span class="brand__mark" aria-hidden="true">.</span>site
+          Maximized
         </a>
         <p class="text-muted mt-4">
-          Infrastructure engineering, DevOps, and systems administration —
+          IT consulting and agent-first software development —
           based in Scottsdale, Arizona.
         </p>
       </div>
@@ -296,10 +329,9 @@
       <nav class="footer-col" aria-label="Footer">
         <h2 class="footer-col__title">Site</h2>
         <div class="footer-links">
-          <a href="./about.html">About</a>
           <a href="./services.html">Services</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./skills.html">Skills</a>
+          <a href="./about.html">About</a>
+          <a href="./work.html">Work</a>
           <a href="./contact.html">Contact</a>
         </div>
       </nav>
@@ -316,7 +348,7 @@
     </div>
 
     <div class="container site-footer__bottom">
-      <p>&copy; <span data-current-year>2026</span> Maximized.site. All rights reserved.</p>
+      <p>&copy; <span data-current-year>2026</span> Maximized. All rights reserved.</p>
       <p>Built as a static site, hosted on GitHub Pages.</p>
     </div>
   </footer>
