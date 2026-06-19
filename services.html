@@ -122,8 +122,9 @@
             </span>
             <h3 class="card__title">Windows &amp; identity administration</h3>
             <p class="card__text">
-              Active Directory, Group Policy, DNS/DHCP, Entra ID, hybrid identity,
-              and access-control cleanup.
+              Active Directory, Group Policy, DNS/DHCP, Entra ID, and hybrid
+              identity — including account lifecycle, lockout investigation, and
+              disabled-user and access-control cleanup.
             </p>
           </li>
 
@@ -144,8 +145,9 @@
             </span>
             <h3 class="card__title">Microsoft 365 &amp; cloud administration</h3>
             <p class="card__text">
-              Tenant hardening, policy baselines, Exchange Online, Intune, and
-              Conditional Access.
+              Tenant hardening, policy baselines, Conditional Access, and Intune —
+              plus Exchange Online operations like mailbox and calendar
+              permissions, forwarding-rule audits, and account remediation.
             </p>
           </li>
 
@@ -155,8 +157,9 @@
             </span>
             <h3 class="card__title">Automation &amp; operational tooling</h3>
             <p class="card__text">
-              PowerShell and Python workflows that reduce repetitive work and
-              improve consistency.
+              PowerShell and Python workflows — from M365 and AD administration to
+              always-on monitoring services with email alerting — that reduce
+              repetitive work and improve consistency.
             </p>
           </li>
 
@@ -253,6 +256,17 @@
         </ul>
 
         <div class="card mt-8" data-reveal>
+          <h3 class="card__title">Self-hosted and private by design</h3>
+          <p class="card__text">
+            When data sensitivity matters, AI can run on your own infrastructure —
+            local, self-hosted models with a graceful fallback when no model is
+            available, so capabilities degrade safely instead of sending your data
+            to a third party. See <a href="./work.html">MandelaReport</a> for a
+            working example.
+          </p>
+        </div>
+
+        <div class="card mt-8" data-reveal>
           <h3 class="card__title">Ideal when</h3>
           <ul class="flow mt-4">
             <li class="card__text">You have a repetitive, knowledge-heavy workflow worth streamlining.</li>
@@ -270,11 +284,59 @@
           <div>
             <h2 id="standard-title" class="cta-banner__title">Security and documentation, as standard</h2>
             <p class="text-muted mt-4">
-              Every engagement includes security-conscious defaults and clear
-              documentation as standard deliverables — not optional add-ons.
+              Security-conscious defaults and clear documentation are standard
+              deliverables — not optional add-ons: credential-safe automation with
+              no hardcoded secrets, <code>-WhatIf</code> dry-runs before anything
+              changes, and runbooks, architecture, and operations docs written to
+              survive turnover.
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ========================= How we build ========================= -->
+    <section class="section--tight" aria-labelledby="build-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">How we build</p>
+          <h2 id="build-title">Engineering standards we hold ourselves to</h2>
+          <p class="section-lead">
+            The same standards we apply to our own public code carry into client
+            work — visible in the repositories on the
+            <a href="./work.html">work page</a>.
+          </p>
+        </div>
+        <ul class="grid grid--2">
+          <li class="card" data-reveal>
+            <h3 class="card__title">Standards-driven &amp; reviewed</h3>
+            <p class="card__text">
+              Consistent coding standards enforced by automated review (such as
+              PSScriptAnalyzer) and validated in CI before anything ships.
+            </p>
+          </li>
+          <li class="card" data-reveal data-reveal-delay="1">
+            <h3 class="card__title">Safe by default</h3>
+            <p class="card__text">
+              Idempotent, re-runnable changes with <code>-WhatIf</code> dry-runs and
+              named parameters — no surprise side effects in production.
+            </p>
+          </li>
+          <li class="card" data-reveal>
+            <h3 class="card__title">Secure by default</h3>
+            <p class="card__text">
+              No hardcoded credentials, least-privilege access, and secrets kept out
+              of builds and source control.
+            </p>
+          </li>
+          <li class="card" data-reveal data-reveal-delay="1">
+            <h3 class="card__title">Documented &amp; versioned</h3>
+            <p class="card__text">
+              Comment-based help, semantic versioning, and architecture and
+              operations runbooks so your team can own the result.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
