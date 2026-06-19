@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Work | Maximized</title>
-  <meta name="description" content="Selected work and public code from Maximized, including Python automation scripts, PowerShell tooling, and the MandelaReport reporting project." />
+  <meta name="description" content="Representative projects from Maximized across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
   <meta name="author" content="Max Daylight" />
   <link rel="canonical" href="https://maximized.site/work.html" />
 
   <meta property="og:site_name" content="Maximized" />
   <meta property="og:title" content="Work | Maximized" />
-  <meta property="og:description" content="Selected work and public code: Python automation scripts, PowerShell tooling, and the MandelaReport project." />
+  <meta property="og:description" content="Representative projects across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maximized.site/work.html" />
   <meta property="og:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Work | Maximized" />
-  <meta name="twitter:description" content="Selected work and public code: Python automation scripts, PowerShell tooling, and the MandelaReport project." />
+  <meta name="twitter:description" content="Representative projects across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
   <meta name="twitter:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="theme-color" content="#0a0f1a" />
@@ -88,10 +88,12 @@
       <div class="container container--default">
         <div class="section-header">
           <p class="section-eyebrow">Work</p>
-          <h1 id="work-title">Selected work &amp; public code</h1>
+          <h1 id="work-title">Representative work</h1>
           <p class="section-lead">
-            A selection of public repositories and projects. Each links out to the
-            source on GitHub.
+            A selection of representative projects showing how Maximized
+            approaches automation, infrastructure tooling, and structured
+            software delivery. Some client work is private, so public examples are
+            paired with broader descriptions of the kinds of problems we solve.
           </p>
         </div>
       </div>
@@ -99,63 +101,124 @@
 
     <section class="section--tight" aria-label="Projects">
       <div class="container">
-        <ul class="grid grid--3">
-          <li class="card card--interactive" data-reveal>
-            <h2 class="card__title">Python-Scripts</h2>
-            <p class="card__text">
-              A collection of Python automation utilities for systems,
-              operations, and everyday tooling tasks.
-            </p>
-            <div class="card__meta">
-              <span class="badge">Python</span>
-              <span class="badge">Automation</span>
-            </div>
-            <p class="mt-4">
-              <a class="btn btn--secondary" href="https://github.com/maxdaylight/Python-Scripts" target="_blank" rel="noopener noreferrer">
-                View on GitHub
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </p>
+        <ul class="stack stack--lg">
+          <li>
+            <article class="card" data-reveal>
+              <h2 class="card__title">Infrastructure automation toolkit</h2>
+              <p class="card__text">
+                PowerShell and Python utilities built to reduce repetitive systems
+                administration work, standardize common tasks, and improve
+                operator consistency across Windows and hybrid environments.
+              </p>
+              <dl class="detail-list mt-4">
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Challenge</dt>
+                  <dd>Routine admin tasks handled manually, inconsistently, and slowly across systems.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Approach</dt>
+                  <dd>Reusable scripts and modules that wrap common operations behind consistent, documented commands.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Outcome</dt>
+                  <dd>Less manual toil and more repeatable, predictable operations.</dd>
+                </div>
+              </dl>
+              <div class="card__meta mt-4">
+                <span class="badge">PowerShell</span>
+                <span class="badge">Python</span>
+                <span class="badge">Automation</span>
+              </div>
+              <p class="mt-4">
+                <a class="btn btn--ghost" href="https://github.com/maxdaylight/Python-Scripts" target="_blank" rel="noopener noreferrer">
+                  View public code on GitHub
+                  <span class="sr-only">(opens in a new tab)</span>
+                  &rarr;
+                </a>
+              </p>
+            </article>
           </li>
 
-          <li class="card card--interactive" data-reveal data-reveal-delay="1">
-            <h2 class="card__title">Scripts</h2>
-            <p class="card__text">
-              PowerShell and shell tooling for administering Windows systems and
-              wider infrastructure operations.
-            </p>
-            <div class="card__meta">
-              <span class="badge">PowerShell</span>
-              <span class="badge">Operations</span>
-            </div>
-            <p class="mt-4">
-              <a class="btn btn--secondary" href="https://github.com/maxdaylight/Scripts" target="_blank" rel="noopener noreferrer">
-                View on GitHub
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </p>
+          <li>
+            <article class="card" data-reveal>
+              <h2 class="card__title">Operational scripting library</h2>
+              <p class="card__text">
+                A collection of administration and support scripts for Windows
+                systems and day-to-day infrastructure operations, with an emphasis
+                on repeatability and practical utility.
+              </p>
+              <dl class="detail-list mt-4">
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Challenge</dt>
+                  <dd>Common support and maintenance steps scattered across notes and one-off commands.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Approach</dt>
+                  <dd>A consolidated, organized library of scripts for recurring operational needs.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Outcome</dt>
+                  <dd>Faster, more consistent day-to-day operations that are easier to hand off.</dd>
+                </div>
+              </dl>
+              <div class="card__meta mt-4">
+                <span class="badge">PowerShell</span>
+                <span class="badge">Windows</span>
+                <span class="badge">Operations</span>
+              </div>
+              <p class="mt-4">
+                <a class="btn btn--ghost" href="https://github.com/maxdaylight/Scripts" target="_blank" rel="noopener noreferrer">
+                  View public code on GitHub
+                  <span class="sr-only">(opens in a new tab)</span>
+                  &rarr;
+                </a>
+              </p>
+            </article>
           </li>
 
-          <li class="card card--interactive" data-reveal data-reveal-delay="2">
-            <h2 class="card__title">MandelaReport</h2>
-            <p class="card__text">
-              A reporting project exploring structured data collection, analysis,
-              and clear presentation of results.
-            </p>
-            <div class="card__meta">
-              <span class="badge">Reporting</span>
-              <span class="badge">Data</span>
-            </div>
-            <p class="mt-4">
-              <a class="btn btn--secondary" href="https://github.com/maxdaylight/MandelaReport" target="_blank" rel="noopener noreferrer">
-                View on GitHub
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </p>
+          <li>
+            <article class="card" data-reveal>
+              <h2 class="card__title">Structured reporting project</h2>
+              <p class="card__text">
+                A reporting-oriented project focused on collecting, organizing, and
+                presenting technical data in a format that is easier to review and
+                act on.
+              </p>
+              <dl class="detail-list mt-4">
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Challenge</dt>
+                  <dd>Raw technical data that was hard to interpret and slow to turn into decisions.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Approach</dt>
+                  <dd>Repeatable collection and reporting patterns that structure the data clearly.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Outcome</dt>
+                  <dd>Information that is easier to review, share, and act on.</dd>
+                </div>
+              </dl>
+              <div class="card__meta mt-4">
+                <span class="badge">Reporting</span>
+                <span class="badge">Data</span>
+              </div>
+              <p class="mt-4">
+                <a class="btn btn--ghost" href="https://github.com/maxdaylight/MandelaReport" target="_blank" rel="noopener noreferrer">
+                  View public code on GitHub
+                  <span class="sr-only">(opens in a new tab)</span>
+                  &rarr;
+                </a>
+              </p>
+            </article>
           </li>
         </ul>
 
-        <p class="mt-8">
+        <p class="text-faint mt-8">
+          Additional client work is available to discuss during discovery where
+          confidentiality allows.
+        </p>
+
+        <p class="mt-6">
           <a class="btn btn--ghost" href="https://github.com/maxdaylight" target="_blank" rel="noopener noreferrer">
             See more on GitHub
             <span class="sr-only">(opens in a new tab)</span>
@@ -169,7 +232,7 @@
       <div class="container">
         <div class="cta-banner" data-reveal>
           <h2 id="work-cta" class="cta-banner__title">Want to discuss a project like these?</h2>
-          <a class="btn btn--primary btn--lg" href="./contact.html">Contact us</a>
+          <a class="btn btn--primary btn--lg" href="./contact.html">Discuss your environment</a>
         </div>
       </div>
     </section>
@@ -183,8 +246,10 @@
           Maximized
         </a>
         <p class="text-muted mt-4">
-          IT consulting and agent-first software development —
-          based in Scottsdale, Arizona.
+          Infrastructure consulting and AI-enabled software.
+        </p>
+        <p class="text-faint mt-4">
+          Scottsdale, Arizona &middot; Remote engagements available.
         </p>
       </div>
 
@@ -204,14 +269,13 @@
           <a href="https://github.com/maxdaylight" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://x.com/max__daylight" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.reddit.com/user/max__daylight" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a href="./contact.html">Get in touch</a>
         </div>
       </div>
     </div>
 
     <div class="container site-footer__bottom">
       <p>&copy; <span data-current-year>2026</span> Maximized. All rights reserved.</p>
-      <p>Built as a static site, hosted on GitHub Pages.</p>
+      <p><a href="./privacy.html">Privacy</a></p>
     </div>
   </footer>
 

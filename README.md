@@ -36,9 +36,10 @@ Live site: [https://maximized.site](https://maximized.site)
 ├── index.html              # homepage
 ├── services.html           # services (two pillars)
 ├── about.html              # about the company + owner + capabilities
-├── work.html               # selected work + public repositories
+├── work.html               # representative work (case-study format)
 ├── portfolio.html          # redirect stub -> work.html (legacy URL)
 ├── contact.html            # contact form (Formspree) + email fallback
+├── privacy.html            # privacy policy
 ├── 404.html                # custom not-found page
 ├── CNAME                    # custom domain (do not modify)
 ├── robots.txt              # crawl directives

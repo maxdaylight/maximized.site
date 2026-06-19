@@ -90,8 +90,9 @@
           <p class="section-eyebrow">Contact</p>
           <h1 id="contact-title">Get in touch</h1>
           <p class="section-lead">
-            Have an infrastructure or software project in mind? Send a message
-            and we'll get back to you.
+            Tell us a bit about your environment, project, or current challenge.
+            Whether you need infrastructure help, automation, or AI-enabled
+            software planning, Maximized can help determine scope and next steps.
           </p>
         </div>
       </div>
@@ -130,12 +131,18 @@
               <div class="field">
                 <label class="field__label" for="contact-message">Message</label>
                 <textarea class="textarea" id="contact-message" name="message" required aria-describedby="message-hint"></textarea>
-                <p class="field__hint" id="message-hint">Tell us a little about your project or question.</p>
+                <p class="field__hint" id="message-hint">Share your environment, the problem you're solving, and any timeline or constraints.</p>
               </div>
 
               <div>
-                <button type="submit" class="btn btn--primary btn--lg" data-form-submit>Send message</button>
+                <button type="submit" class="btn btn--primary btn--lg" data-form-submit>Discuss your environment</button>
               </div>
+
+              <p class="field__hint">
+                Information submitted through this form is used only to review your
+                inquiry and respond to your request. See our
+                <a href="./privacy.html">privacy policy</a>.
+              </p>
 
               <p class="form-status form-status--success is-hidden" role="status" aria-live="polite" data-form-success>
                 Thanks for reaching out. Your message has been sent and we'll get back to you soon.
@@ -146,18 +153,37 @@
             </form>
           </div>
 
-          <aside aria-labelledby="contact-alt-title">
-            <div class="card">
-              <h2 id="contact-alt-title" class="card__title">Prefer email?</h2>
-              <p class="card__text">
-                If the form isn't working for you, send a message directly.
-              </p>
-              <p class="mt-4">
-                <a class="btn btn--secondary" href="mailto:maxdaylight@maximized.site">Email us</a>
-              </p>
-              <hr />
-              <h3 class="card__title">Elsewhere</h3>
-              <ul class="social-cards">
+          <aside aria-labelledby="contact-info-title">
+            <div class="stack stack--lg">
+              <div class="card">
+                <h2 id="contact-info-title" class="card__title">What to include</h2>
+                <ul class="flow mt-4">
+                  <li class="card__text">Your current environment or platform.</li>
+                  <li class="card__text">The problem you are trying to solve.</li>
+                  <li class="card__text">Any timeline, constraints, or security requirements.</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h2 class="card__title">Engagement notes</h2>
+                <ul class="flow mt-4">
+                  <li class="card__text">Based in Scottsdale, Arizona; available for remote and local engagements.</li>
+                  <li class="card__text">Initial responses typically within 1&ndash;2 business days.</li>
+                  <li class="card__text">Please keep sensitive infrastructure details high-level until an engagement is established.</li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h2 class="card__title">Prefer email?</h2>
+                <p class="card__text">
+                  If the form isn't working for you, send a message directly.
+                </p>
+                <p class="mt-4">
+                  <a class="btn btn--secondary" href="mailto:maxdaylight@maximized.site">Email us</a>
+                </p>
+                <hr />
+                <h3 class="card__title">Elsewhere</h3>
+                <ul class="social-cards">
                 <li>
                   <a class="social-card" href="https://github.com/maxdaylight" target="_blank" rel="noopener noreferrer">
                     <span class="social-card__icon" aria-hidden="true">
@@ -200,8 +226,8 @@
                     <span class="sr-only">(opens in a new tab)</span>
                   </a>
                 </li>
-              </ul>
-              <p class="text-faint mt-4">Based in Scottsdale, Arizona. Available for remote engagements.</p>
+                </ul>
+              </div>
             </div>
           </aside>
         </div>
@@ -217,8 +243,10 @@
           Maximized
         </a>
         <p class="text-muted mt-4">
-          IT consulting and agent-first software development —
-          based in Scottsdale, Arizona.
+          Infrastructure consulting and AI-enabled software.
+        </p>
+        <p class="text-faint mt-4">
+          Scottsdale, Arizona &middot; Remote engagements available.
         </p>
       </div>
 
@@ -238,14 +266,13 @@
           <a href="https://github.com/maxdaylight" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://x.com/max__daylight" target="_blank" rel="noopener noreferrer">X</a>
           <a href="https://www.reddit.com/user/max__daylight" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a href="./contact.html">Get in touch</a>
         </div>
       </div>
     </div>
 
     <div class="container site-footer__bottom">
       <p>&copy; <span data-current-year>2026</span> Maximized. All rights reserved.</p>
-      <p>Built as a static site, hosted on GitHub Pages.</p>
+      <p><a href="./privacy.html">Privacy</a></p>
     </div>
   </footer>
 
