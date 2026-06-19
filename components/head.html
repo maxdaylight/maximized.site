@@ -1,0 +1,52 @@
+<!--
+  head.html — Reference template for the shared <head> block.
+  This is NOT a server include. Copy this block into each page and replace the
+  {{PLACEHOLDERS}} with page-specific values.
+
+  Replace:
+    {{PAGE_TITLE}}        e.g. "About"
+    {{META_DESCRIPTION}}  unique, 150–160 chars
+    {{CANONICAL_URL}}     e.g. https://maximized.site/about.html
+    {{OG_TITLE}}          usually same as <title>
+    {{OG_DESCRIPTION}}    usually same as meta description
+    {{OG_TYPE}}           "website" for home, "profile"/"article" otherwise
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{PAGE_TITLE}} | Maximized.site</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <meta name="author" content="Max Daylight" />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Maximized.site" />
+  <meta property="og:title" content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:type" content="{{OG_TYPE}}" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta property="og:image" content="https://maximized.site/assets/images/headshot.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{OG_TITLE}}" />
+  <meta name="twitter:description" content="{{OG_DESCRIPTION}}" />
+  <meta name="twitter:image" content="https://maximized.site/assets/images/headshot.png" />
+
+  <meta name="theme-color" content="#0a0f1a" />
+
+  <!-- Fonts: Fontshare CDN (Cabinet Grotesk + Satoshi) -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/utilities.css" />
+</head>

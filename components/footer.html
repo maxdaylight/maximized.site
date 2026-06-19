@@ -1,0 +1,43 @@
+<!--
+  footer.html — Reference template for the shared site footer.
+  This is NOT a server include. Keep this block in sync across all pages.
+  The [data-current-year] span is populated by utils.js.
+-->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="footer-col">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark" aria-hidden="true">&#9632;</span>
+        Maximized<span class="brand__mark" aria-hidden="true">.</span>site
+      </a>
+      <p class="text-muted mt-4">
+        Infrastructure engineering, DevOps, and systems administration —
+        based in Phoenix, Arizona.
+      </p>
+    </div>
+
+    <nav class="footer-col" aria-label="Footer">
+      <h2 class="footer-col__title">Site</h2>
+      <div class="footer-links">
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="footer-col">
+      <h2 class="footer-col__title">Elsewhere</h2>
+      <div class="footer-links">
+        <a href="https://github.com/maxdaylight" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="./contact.html">Get in touch</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>&copy; <span data-current-year>2026</span> Maximized.site. All rights reserved.</p>
+    <p>Built as a static site, hosted on GitHub Pages.</p>
+  </div>
+</footer>

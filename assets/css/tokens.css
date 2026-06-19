@@ -1,0 +1,157 @@
+/* ==========================================================================
+   tokens.css — Design tokens for maximized.site
+   Colors, fluid type scale, spacing, radii, shadows, transitions, widths.
+   Dark navy + electric teal palette (IT / DevOps professional aesthetic).
+   ========================================================================== */
+
+:root {
+  /* ---- Font families (loaded via Fontshare CDN) -------------------------- */
+  --font-display: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Satoshi", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Fira Code", "SFMono-Regular", Consolas, monospace;
+
+  /* ---- Fluid type scale (clamp: min, preferred-vw, max) ------------------ */
+  /* 12px floor on --text-xs; 16px on --text-base. */
+  --text-xs: clamp(0.75rem, 0.74rem + 0.05vw, 0.8125rem);     /* 12 -> 13 */
+  --text-sm: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem);    /* 14 -> 15 */
+  --text-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);      /* 16 -> 17 */
+  --text-md: clamp(1.125rem, 1.08rem + 0.22vw, 1.25rem);      /* 18 -> 20 */
+  --text-lg: clamp(1.25rem, 1.18rem + 0.35vw, 1.5rem);        /* 20 -> 24 */
+  --text-xl: clamp(1.5rem, 1.38rem + 0.6vw, 1.875rem);        /* 24 -> 30 */
+  --text-2xl: clamp(1.875rem, 1.68rem + 0.98vw, 2.5rem);      /* 30 -> 40 */
+  --text-3xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.25rem);       /* 36 -> 52 */
+  --text-hero: clamp(2.75rem, 2.1rem + 3.25vw, 4.75rem);      /* 44 -> 76 */
+
+  /* ---- Line heights & weights -------------------------------------------- */
+  --leading-tight: 1.12;
+  --leading-snug: 1.28;
+  --leading-normal: 1.6;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.04em;
+
+  /* ---- Spacing scale (4px base unit) ------------------------------------- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* ---- Border radius ----------------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ---- Content width tokens ---------------------------------------------- */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1200px;
+
+  /* ---- Layout ------------------------------------------------------------ */
+  --header-height: 4.5rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+
+  /* ---- Transitions ------------------------------------------------------- */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 420ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Z-index scale ----------------------------------------------------- */
+  --z-base: 1;
+  --z-header: 100;
+  --z-nav: 200;
+  --z-skiplink: 300;
+}
+
+/* ==========================================================================
+   Color palette — Dark theme (default professional aesthetic)
+   ========================================================================== */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg: #0a0f1a;            /* deep navy */
+  --color-surface: #111a2b;       /* raised navy surface */
+  --color-surface-2: #18233a;     /* secondary surface / hover */
+  --color-border: #243049;        /* subtle border on dark */
+  --color-border-strong: #33405c;
+
+  --color-text: #e9eef7;          /* near-white body text */
+  --color-text-muted: #9aa8c2;    /* muted secondary text */
+  --color-text-faint: #6b7a97;    /* faint tertiary text */
+
+  --color-primary: #2dd4bf;       /* electric teal accent */
+  --color-primary-hover: #5eead4;
+  --color-primary-contrast: #04211d; /* text on teal surfaces */
+  --color-primary-soft: rgba(45, 212, 191, 0.14);
+
+  --color-focus: #5eead4;
+
+  /* Shadows tone-matched to dark surfaces via oklch + alpha */
+  --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.45);
+  --shadow-md: 0 6px 18px oklch(0% 0 0 / 0.5);
+  --shadow-lg: 0 18px 48px oklch(0% 0 0 / 0.55);
+  --shadow-focus: 0 0 0 3px var(--color-primary-soft);
+}
+
+/* ==========================================================================
+   Color palette — Light theme
+   ========================================================================== */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg: #f6f8fc;
+  --color-surface: #ffffff;
+  --color-surface-2: #eef2f9;
+  --color-border: #d8e0ee;
+  --color-border-strong: #c2cee2;
+
+  --color-text: #0f1830;
+  --color-text-muted: #45526e;
+  --color-text-faint: #6b7794;
+
+  --color-primary: #0d9488;       /* deeper teal for AA contrast on light */
+  --color-primary-hover: #0f766e;
+  --color-primary-contrast: #ffffff;
+  --color-primary-soft: rgba(13, 148, 136, 0.12);
+
+  --color-focus: #0d9488;
+
+  --shadow-sm: 0 1px 2px oklch(40% 0.04 250 / 0.12);
+  --shadow-md: 0 6px 18px oklch(40% 0.04 250 / 0.14);
+  --shadow-lg: 0 18px 48px oklch(40% 0.04 250 / 0.18);
+  --shadow-focus: 0 0 0 3px var(--color-primary-soft);
+}
+
+/* Default to dark when no preference is resolved by JS and the user's
+   system prefers light: light tokens applied only when explicitly set. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+    --color-bg: #f6f8fc;
+    --color-surface: #ffffff;
+    --color-surface-2: #eef2f9;
+    --color-border: #d8e0ee;
+    --color-border-strong: #c2cee2;
+    --color-text: #0f1830;
+    --color-text-muted: #45526e;
+    --color-text-faint: #6b7794;
+    --color-primary: #0d9488;
+    --color-primary-hover: #0f766e;
+    --color-primary-contrast: #ffffff;
+    --color-primary-soft: rgba(13, 148, 136, 0.12);
+    --color-focus: #0d9488;
+  }
+}

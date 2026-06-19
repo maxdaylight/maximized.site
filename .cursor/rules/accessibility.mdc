@@ -1,0 +1,51 @@
+---
+description: WCAG AA accessibility rules for maximized.site
+globs: ["*.html", "components/*.html", "assets/css/*.css", "assets/js/*.js"]
+alwaysApply: true
+---
+
+# Accessibility Rules (WCAG 2.1 AA)
+
+## Contrast
+- Body text: **4.5:1** minimum contrast against its background.
+- Large text (24px+ / 19px+ bold): **3:1** minimum.
+- Verify both light and dark themes meet these ratios.
+
+## Forms & controls
+- Every `<input>`, `<select>`, and `<textarea>` has an associated `<label>`
+  (via `for`/`id`), never placeholder-only labelling.
+- Every `<button>` has discernible text or an `aria-label`.
+
+## Keyboard
+- All interactive elements are reachable and operable with the keyboard
+  (Tab to move, Enter/Space to activate, Escape to dismiss overlays).
+- Logical, source-order focus flow. No keyboard traps.
+
+## Focus visibility
+- Visible focus indicators via `:focus-visible`.
+- Never `outline: none` without providing an equivalent visible replacement.
+
+## Icons
+- Icon-only controls MUST have an `aria-label` or a visually hidden
+  `<span class="sr-only">`.
+- Decorative SVGs use `aria-hidden="true"` and `focusable="false"`.
+
+## ARIA discipline
+- Use `role` and `aria-*` ONLY when no native HTML semantic exists.
+- Prefer native elements (`<button>`, `<nav>`, `<main>`) over ARIA roles.
+
+## Touch targets
+- Minimum interactive target size **44×44px**.
+
+## Motion
+- Respect `prefers-reduced-motion: reduce` for ALL animations and transitions.
+- Provide a non-animated fallback state (content visible without motion).
+
+## Images
+- `alt=""` for purely decorative images.
+- Meaningful, concise `alt` text for content images.
+
+## Landmarks (every page)
+- Exactly one `<header>`, one `<main>`, one `<footer>`.
+- Primary navigation as `<nav aria-label="Primary">`.
+- A skip-to-content link as the first focusable element.

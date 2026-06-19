@@ -1,0 +1,102 @@
+/* ==========================================================================
+   layout.css — Container, grid, and section layout utilities
+   Depends on tokens.css.
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--content-wide);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container--narrow { max-width: var(--content-narrow); }
+.container--default { max-width: var(--content-default); }
+
+/* ---- Vertical section rhythm -------------------------------------------- */
+.section {
+  padding-block: clamp(var(--space-12), 6vw, var(--space-24));
+}
+
+.section--tight {
+  padding-block: clamp(var(--space-8), 4vw, var(--space-16));
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: var(--content-narrow);
+  margin-bottom: var(--space-10);
+}
+
+.section-eyebrow {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.section-lead {
+  color: var(--color-text-muted);
+  font-size: var(--text-md);
+}
+
+/* ---- Responsive auto-fit grid ------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+/* ---- Flex helpers ------------------------------------------------------- */
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.cluster--center {
+  justify-content: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stack--lg { gap: var(--space-8); }
+
+/* ---- Two-column split (content + media) --------------------------------- */
+.split {
+  display: grid;
+  gap: clamp(var(--space-8), 5vw, var(--space-16));
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 60rem) {
+  .split {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .split--media-first > :first-child { order: 2; }
+}
+
+/* ---- Responsive collapse for grids -------------------------------------- */
+@media (max-width: 60rem) {
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 40rem) {
+  .grid--2,
+  .grid--3 { grid-template-columns: 1fr; }
+}

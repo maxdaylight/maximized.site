@@ -1,0 +1,57 @@
+---
+description: HTML/CSS/JS coding standards for maximized.site
+globs: ["*.html", "components/*.html", "assets/css/*.css", "assets/js/*.js"]
+alwaysApply: true
+---
+
+# HTML / CSS / JS Coding Standards
+
+These rules apply to every `.html` file and all CSS/JS under `assets/`.
+
+## Document structure
+- Use the HTML5 doctype: `<!doctype html>`.
+- The `<html>` element MUST have `lang="en"`.
+- The `<head>` MUST declare `<meta charset="UTF-8">` first, followed by
+  `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+
+## Headings
+- Exactly **one `<h1>` per page**.
+- Heading levels MUST NOT skip (never jump `h1` -> `h3`). Nest in order.
+
+## Images
+Every `<img>` MUST include:
+- `alt` (descriptive for content images, `alt=""` for decorative ones)
+- explicit `width` and `height` attributes (to prevent layout shift)
+- `loading="lazy"`
+- `decoding="async"`
+
+Above-the-fold hero/LCP images may use `loading="eager"` with a comment
+explaining why.
+
+## Links
+- All external `<a>` tags MUST use `target="_blank" rel="noopener noreferrer"`.
+- Internal links use relative paths (e.g. `./about.html`).
+
+## Scripts & styles
+- JavaScript is loaded at the end of `<body>` with the `defer` attribute,
+  or via `type="module"`. Never use blocking inline scripts.
+- CSS is loaded in `<head>` via `<link rel="stylesheet">`.
+- **No inline styles** (`style="..."`). All styling lives in `assets/css/`.
+- **No inline event handlers** (`onclick=""`, etc.). Wire all behavior with
+  `addEventListener` in `assets/js/`.
+
+## Semantic HTML
+- Use semantic elements where they fit: `<header>`, `<nav>`, `<main>`,
+  `<section>`, `<article>`, `<aside>`, `<footer>`.
+- Do NOT use a `<div>` where a semantic element is appropriate.
+
+## Required on every page
+- Skip-to-content link as the first focusable element.
+- `<meta name="description">`.
+- Open Graph: `og:title`, `og:description`, `og:image`.
+- `<link rel="canonical">`.
+
+## Style conventions
+- Two-space indentation in HTML/CSS/JS.
+- Class names use kebab-case; BEM-ish (`block__element`, `block--modifier`).
+- Prefer CSS custom properties (tokens) over hard-coded values.

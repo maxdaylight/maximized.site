@@ -1,0 +1,40 @@
+---
+description: GitHub Pages constraints and deployment rules for maximized.site
+globs: ["*.html", "assets/**/*", ".github/workflows/*.yml", "*.xml", "*.txt"]
+alwaysApply: true
+---
+
+# GitHub Pages Constraints & Deployment
+
+This site is hosted on **GitHub Pages** at the custom domain **maximized.site**.
+
+## Static only
+- Static files ONLY. No server-side rendering, no PHP, no Node.js runtime.
+- No API routes, no databases. Forms use Formspree (third-party) or `mailto:`.
+
+## Links & paths
+- Internal links use relative paths (`./about.html`) or root-relative paths
+  consistent with serving from the root domain.
+- All assets live under `/assets/` with subfolders:
+  `/assets/css/`, `/assets/js/`, `/assets/images/`, `/assets/fonts/`.
+- Images must be committed under `/assets/images/` or served from an approved CDN.
+
+## CNAME
+- The `CNAME` file (contains `maximized.site`) MUST NEVER be deleted or modified.
+
+## 404
+- `404.html` MUST live at the repo root for GitHub Pages custom 404 support.
+
+## Storage
+- Do NOT use `localStorage` or `sessionStorage` (may be blocked in embedded
+  contexts). Use in-memory state instead.
+
+## Deployment
+- The GitHub Actions workflow at `.github/workflows/pages.yml` deploys from the
+  `main` branch using `actions/upload-pages-artifact` + `actions/deploy-pages`.
+- Required permissions: `contents: read`, `pages: write`, `id-token: write`.
+
+## Build tooling
+- No build step is required. If a `package.json` / `Makefile` is added for dev
+  tooling (e.g. `live-server`), it MUST be documented in `README.md` and MUST
+  NOT be required to serve the site.

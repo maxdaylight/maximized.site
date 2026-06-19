@@ -1,0 +1,43 @@
+---
+description: SEO, Open Graph, and structured data rules for maximized.site
+globs: ["*.html", "sitemap.xml", "robots.txt"]
+alwaysApply: true
+---
+
+# SEO Rules
+
+## Title & description
+- Unique `<title>` per page in the format: `Page Name | Maximized.site`.
+- Unique `<meta name="description">` per page, **150–160 characters**.
+
+## Open Graph
+Every page includes:
+- `og:title`
+- `og:description`
+- `og:image` (absolute URL, e.g. `https://maximized.site/assets/images/og-*.png`)
+- `og:url` (absolute canonical URL)
+- `og:type` (`website` for the homepage, `article`/`profile` where appropriate)
+
+## Twitter Card
+Every page includes:
+- `twitter:card` (`summary_large_image`)
+- `twitter:title`
+- `twitter:description`
+- `twitter:image`
+
+## Canonical
+- `<link rel="canonical" href="https://maximized.site/page.html">` on every page.
+
+## Structured data (JSON-LD)
+- `Person` schema on `index.html`.
+- `BreadcrumbList` schema on every interior page.
+- Use `<script type="application/ld+json">`.
+
+## Content SEO
+- Descriptive `alt` text on all images (aids image SEO).
+- One `<h1>` per page; clear, ordered `<h2>`/`<h3>` structure.
+
+## Crawl files
+- `robots.txt` at repo root allowing all crawlers, referencing the sitemap.
+- `sitemap.xml` at repo root listing all pages with `<lastmod>` dates.
+- Keep `sitemap.xml` `<lastmod>` updated when page content changes.
