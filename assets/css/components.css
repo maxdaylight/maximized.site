@@ -501,6 +501,71 @@
 }
 
 /* ==========================================================================
+   Social cards
+   ========================================================================== */
+.social-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: 44px;
+  padding: var(--space-4);
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  transition: border-color var(--transition-interactive),
+    background-color var(--transition-interactive);
+}
+
+.social-card:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.social-card__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+}
+
+.social-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.social-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.social-card__name {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  line-height: 1.2;
+}
+
+.social-card__handle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .site-footer {
