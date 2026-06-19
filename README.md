@@ -1,7 +1,7 @@
 # maximized.site
 
 Personal portfolio and business website for **Max Daylight** — IT Systems
-Administrator / Infrastructure Engineer / DevOps Engineer based in Phoenix, AZ.
+Administrator / Infrastructure Engineer / DevOps Engineer based in Scottsdale, AZ.
 
 Live site: [https://maximized.site](https://maximized.site)
 
