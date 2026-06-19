@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Work | Maximized</title>
-  <meta name="description" content="Representative projects from Maximized across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
+  <meta name="description" content="Representative work from Maximized: a standards-driven PowerShell administration toolkit, an AI-powered webpage change tracker, and automated market-monitoring services." />
   <meta name="author" content="Max Daylight" />
   <link rel="canonical" href="https://maximized.site/work.html" />
 
   <meta property="og:site_name" content="Maximized" />
   <meta property="og:title" content="Work | Maximized" />
-  <meta property="og:description" content="Representative projects across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
+  <meta property="og:description" content="A PowerShell administration toolkit, an AI-powered webpage change tracker, and automated market-monitoring services. Public code paired with the problems we solve." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://maximized.site/work.html" />
   <meta property="og:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Work | Maximized" />
-  <meta name="twitter:description" content="Representative projects across infrastructure automation, operational tooling, and structured reporting. Public code paired with the problems we solve." />
+  <meta name="twitter:description" content="A PowerShell administration toolkit, an AI-powered webpage change tracker, and automated market-monitoring services. Public code paired with the problems we solve." />
   <meta name="twitter:image" content="https://maximized.site/assets/images/headshot.png" />
 
   <meta name="theme-color" content="#0a0f1a" />
@@ -104,67 +104,35 @@
         <ul class="stack stack--lg">
           <li>
             <article class="card" data-reveal>
-              <h2 class="card__title">Infrastructure automation toolkit</h2>
+              <h2 class="card__title">PowerShell systems administration toolkit</h2>
               <p class="card__text">
-                PowerShell and Python utilities built to reduce repetitive systems
-                administration work, standardize common tasks, and improve
-                operator consistency across Windows and hybrid environments.
+                A large, categorized library of PowerShell scripts for Windows,
+                Microsoft 365, Azure, and Active Directory administration &mdash;
+                covering account lifecycle, mailbox and calendar management,
+                security and NTFS permissions, software inventory, and system
+                maintenance.
               </p>
               <dl class="detail-list mt-4">
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Challenge</dt>
-                  <dd>Routine admin tasks handled manually, inconsistently, and slowly across systems.</dd>
+                  <dd>Day-to-day administration across identity, cloud, and Windows systems handled with scattered, inconsistent one-off scripts.</dd>
                 </div>
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Approach</dt>
-                  <dd>Reusable scripts and modules that wrap common operations behind consistent, documented commands.</dd>
+                  <dd>A standards-driven collection where every script ships with comment-based help, parameter validation, <code>-WhatIf</code> safety, and idempotency &mdash; validated in CI with PSScriptAnalyzer and GitHub Actions.</dd>
                 </div>
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Outcome</dt>
-                  <dd>Less manual toil and more repeatable, predictable operations.</dd>
+                  <dd>Repeatable, auditable, production-safe automation that a team can run and maintain with confidence.</dd>
                 </div>
               </dl>
               <div class="card__meta mt-4">
                 <span class="badge">PowerShell</span>
-                <span class="badge">Python</span>
-                <span class="badge">Automation</span>
-              </div>
-              <p class="mt-4">
-                <a class="btn btn--ghost" href="https://github.com/maxdaylight/Python-Scripts" target="_blank" rel="noopener noreferrer">
-                  View public code on GitHub
-                  <span class="sr-only">(opens in a new tab)</span>
-                  &rarr;
-                </a>
-              </p>
-            </article>
-          </li>
-
-          <li>
-            <article class="card" data-reveal>
-              <h2 class="card__title">Operational scripting library</h2>
-              <p class="card__text">
-                A collection of administration and support scripts for Windows
-                systems and day-to-day infrastructure operations, with an emphasis
-                on repeatability and practical utility.
-              </p>
-              <dl class="detail-list mt-4">
-                <div class="detail-list__row">
-                  <dt class="detail-list__term">Challenge</dt>
-                  <dd>Common support and maintenance steps scattered across notes and one-off commands.</dd>
-                </div>
-                <div class="detail-list__row">
-                  <dt class="detail-list__term">Approach</dt>
-                  <dd>A consolidated, organized library of scripts for recurring operational needs.</dd>
-                </div>
-                <div class="detail-list__row">
-                  <dt class="detail-list__term">Outcome</dt>
-                  <dd>Faster, more consistent day-to-day operations that are easier to hand off.</dd>
-                </div>
-              </dl>
-              <div class="card__meta mt-4">
-                <span class="badge">PowerShell</span>
-                <span class="badge">Windows</span>
-                <span class="badge">Operations</span>
+                <span class="badge">Microsoft 365</span>
+                <span class="badge">Azure</span>
+                <span class="badge">Active Directory</span>
+                <span class="badge">PSScriptAnalyzer</span>
+                <span class="badge">GitHub Actions</span>
               </div>
               <p class="mt-4">
                 <a class="btn btn--ghost" href="https://github.com/maxdaylight/Scripts" target="_blank" rel="noopener noreferrer">
@@ -178,32 +146,77 @@
 
           <li>
             <article class="card" data-reveal>
-              <h2 class="card__title">Structured reporting project</h2>
+              <h2 class="card__title">MandelaReport &mdash; webpage change tracking with AI summaries</h2>
               <p class="card__text">
-                A reporting-oriented project focused on collecting, organizing, and
-                presenting technical data in a format that is easier to review and
-                act on.
+                A self-hosted web app that compares a page's live content against
+                historical Wayback Machine snapshots, highlights word-level
+                differences, and generates a plain-language summary of what changed
+                using a local LLM &mdash; with a rule-based fallback when no model
+                is available.
               </p>
               <dl class="detail-list mt-4">
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Challenge</dt>
-                  <dd>Raw technical data that was hard to interpret and slow to turn into decisions.</dd>
+                  <dd>Detecting and explaining how a web page changed over time without tedious manual comparison.</dd>
                 </div>
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Approach</dt>
-                  <dd>Repeatable collection and reporting patterns that structure the data clearly.</dd>
+                  <dd>Robots-aware fetching and Wayback snapshot selection, word-level diffing, and an optional local llama.cpp model that narrates the changes &mdash; packaged as a Dockerized HTTP API with SQLite storage.</dd>
                 </div>
                 <div class="detail-list__row">
                   <dt class="detail-list__term">Outcome</dt>
-                  <dd>Information that is easier to review, share, and act on.</dd>
+                  <dd>A clear, human-readable report of what changed between any two points in time, runnable entirely on your own infrastructure.</dd>
                 </div>
               </dl>
               <div class="card__meta mt-4">
-                <span class="badge">Reporting</span>
-                <span class="badge">Data</span>
+                <span class="badge">Python</span>
+                <span class="badge">Docker</span>
+                <span class="badge">SQLite</span>
+                <span class="badge">llama.cpp (local LLM)</span>
+                <span class="badge">Wayback Machine</span>
               </div>
               <p class="mt-4">
                 <a class="btn btn--ghost" href="https://github.com/maxdaylight/MandelaReport" target="_blank" rel="noopener noreferrer">
+                  View public code on GitHub
+                  <span class="sr-only">(opens in a new tab)</span>
+                  &rarr;
+                </a>
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="card" data-reveal>
+              <h2 class="card__title">Automated market-monitoring services</h2>
+              <p class="card__text">
+                Python services that monitor Kraken markets &mdash; scanning USD
+                pairs for oversold mean-reversion setups and watching for newly
+                listed trading pairs &mdash; and send email alerts when conditions
+                are met.
+              </p>
+              <dl class="detail-list mt-4">
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Challenge</dt>
+                  <dd>Catching time-sensitive market conditions without manually watching feeds around the clock.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Approach</dt>
+                  <dd>Scheduled Python services query the exchange API, evaluate conditions, and send SMTP alerts &mdash; isolated in a dedicated virtualenv and run as systemd services in an unprivileged Proxmox LXC, with logs surfaced through journald.</dd>
+                </div>
+                <div class="detail-list__row">
+                  <dt class="detail-list__term">Outcome</dt>
+                  <dd>Hands-off, always-on monitoring with alerts delivered automatically.</dd>
+                </div>
+              </dl>
+              <div class="card__meta mt-4">
+                <span class="badge">Python 3.11</span>
+                <span class="badge">Kraken API</span>
+                <span class="badge">systemd</span>
+                <span class="badge">Proxmox LXC</span>
+                <span class="badge">SMTP alerts</span>
+              </div>
+              <p class="mt-4">
+                <a class="btn btn--ghost" href="https://github.com/maxdaylight/Python-Scripts" target="_blank" rel="noopener noreferrer">
                   View public code on GitHub
                   <span class="sr-only">(opens in a new tab)</span>
                   &rarr;
